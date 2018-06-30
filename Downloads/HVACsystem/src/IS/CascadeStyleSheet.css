@@ -1,0 +1,30 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 17, 2018, 8:58:20 AM
+    Author     : moeyaziji
+*/
+
+.root{
+    -fx-font-size:10pt;
+    -fx-font-family: bold "Times";
+    -fx-background: #FFFFFF;
+}
+#returningCustomer, #TechnicianButton, #admin, #newCustomer, #newSupplier, #returningsupplier
+{
+    -fx-font-size:14pt;
+    -fx-font-family: bold "Times";
+    
+    
+}
+
+
+#message
+{
+    -fx-font-size:14pt;
+        -fx-font-family: bold "Times";
+
+}

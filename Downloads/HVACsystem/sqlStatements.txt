@@ -1,0 +1,111 @@
+create table "JAVAUSER".CUSTOMER
+(
+	CUSTOMERID VARCHAR2(1000) not null constraint CUSTOMERID_PK primary key,
+	FIRSTNAME VARCHAR2(1000),
+	LASTNAME VARCHAR2(1000),
+	PHONENUMBER VARCHAR2(38),
+	ADDRESS VARCHAR2(1000),
+	CITY VARCHAR2(1000),
+	STATE VARCHAR2(1000),
+	ZIPCODE VARCHAR2(38)
+)
+
+create table "JAVAUSER".PRODUCT
+(
+	PRODUCTID VARCHAR2(1000) not null constraint PRODUCTID_PK primary key,
+	PRODUCTNAME VARCHAR2(1000),
+	DESCRIPTION VARCHAR2(1000),
+	PRICEPAID VARCHAR2(100),
+	SUPPLIERNAME VARCHAR2(100)
+)
+
+create table "JAVAUSER".PRODUCTSALES
+(
+	CUSTOMERID VARCHAR2(100),
+	PRODUCTID VARCHAR2(100),
+	PRODUCTNAME VARCHAR2(100),
+	PRICEPAID VARCHAR2(100),
+	DESCRIPTION VARCHAR2(1000)
+)
+
+create table "JAVAUSER".SERVICE
+(
+	CUSTOMERID VARCHAR2(100),
+	TECHNICIANID VARCHAR2(100),
+	SERVICEDESCRIPTION VARCHAR2(1000),
+	COMPLETED VARCHAR2(100)
+)
+
+create table "JAVAUSER".SUPPLIER
+(
+	SUPPLIERID VARCHAR2(1000) not null constraint SUPPLIERID_PK primary key,
+	SUPPLIERNAME VARCHAR2(1000),
+	ADDRESS VARCHAR2(1000),
+	CITY VARCHAR2(1000),
+	STATE VARCHAR2(1000),
+	ZIPCODE VARCHAR2(38),
+	PHONENUMBER VARCHAR2(100)
+)
+
+create table "JAVAUSER".TECHNICIAN
+(
+	TECHNICIANID VARCHAR2(1000) not null constraint TECHNICIANID_PK primary key,
+	FIRSTNAME VARCHAR2(1000),
+	LASTNAME VARCHAR2(1000),
+	PHONENUMBER VARCHAR2(38)
+)
+
+create table "JAVAUSER".STORE
+(
+	STOREID CHAR(100),
+	STORENAME VARCHAR2(100),
+	ZIPCODE VARCHAR2(50)
+)
+
+
+insert into javauser.CUSTOMER (customerid, firstname, lastname, phonenumber, address, city, state, zipcode) 
+            values ('dfhfuduh', 'Mohammad','Yaziji','2027468516','887 port republic road apt e','Harrisonburg','VA',22801);
+insert into javauser.CUSTOMER (customerid, firstname, lastname, phonenumber, address, city, state, zipcode) 
+            values ('y4y5y6y2', 'Grey','moon','2023465816','987 port republic road','Harrisonburg','VA',22801);
+insert into javauser.CUSTOMER (customerid, firstname, lastname, phonenumber, address, city, state, zipcode) 
+            values ('h4yhu3hf', 'chris','luke','2022439084','8478 North High Street','Harrisonburg','VA',23027);	
+insert into javauser.CUSTOMER (customerid, firstname, lastname, phonenumber, address, city, state, zipcode) 
+            values ('djkigy54', 'jake','ball','2027468516','4532 sang avenue apt 7','Alexandria','VA',34535);
+insert into javauser.CUSTOMER (customerid, firstname, lastname, phonenumber, address, city, state, zipcode) 
+            values ('fdjkjsfj', 'tyler','creator','2027468516','887 east road apt h','Staunton','VA',24253);	
+
+			
+
+			
+insert into javauser.technician (technicianid, firstname, lastname, phoneNumber) values ('8708d76d','jake','king','2027468513');
+insert into javauser.technician (technicianid, firstname, lastname, phoneNumber) values ('0a5dcd30','grey','michael','432839553');
+insert into javauser.technician (technicianid, firstname, lastname, phoneNumber) values ('7ef9e483','dekota','more','253242342');
+insert into javauser.technician (technicianid, firstname, lastname, phoneNumber) values ('9ade7792','moe ','ziji','343534');
+insert into javauser.technician (technicianid, firstname, lastname, phoneNumber) values ('29a712b5','kaleb','young','3422534');
+			
+			
+			
+			
+insert into javauser.supplier (supplierID, supplierName, address, city, state, zipcode) values ('703467bb','Goodman','3434 int road building 100','Harrisonburg','va',22801);
+insert into javauser.supplier (supplierID, supplierName, address, city, state, zipcode, phonenumber) values ('2324aa0e','Goodman','3434 int road building 100','Harrisonburg','va','22801','324233112');
+
+
+
+
+
+
+insert into javauser.product (productID, productName, description, pricepaid, suppliername) values ('a81cd195','Electric Fan','Electric Fan, easy to use','30.49','GoodMan');
+insert into javauser.product (productID, productName, description, pricepaid, suppliername) values ('5346e66c','BlueRidge heat pump','Mini split heat pump system','519.99','Haier');
+insert into javauser.product (productID, productName, description, pricepaid, suppliername) values ('322908aa','DellaAir conditoner','Portable dehumidifier A/C ','238.43','goodman');
+insert into javauser.product (productID, productName, description, pricepaid, suppliername) values ('06e1dc03','LG portable air conditioner','refurbished but reliable ','433.32','Goodman');
+insert into javauser.product (productID, productName, description, pricepaid, suppliername) values ('d3e0964c','Inline duct booster','7 In. L, Sleeve ','71.99','Haier');
+
+
+insert into javauser.product (productID, productName, description, pricepaid, suppliername) values ('cac646fc','Water Heater','Water heater, includes free instalation','299.99','GoodMan');
+insert into javauser.product (productID, productName, description, pricepaid, suppliername) values ('9fc83d71','Water Cooler','Water Cooler, includes free instalation','299.99','');
+insert into javauser.product (productID, productName, description, pricepaid, suppliername) values ('61006c31','Haier Air conditioner','Portable and reliable air coditioner','29.99','Goodman');
+insert into javauser.supplier (supplierID, supplierName, address, city, state, zipcode, phonenumber) values ('766c87cc','Haier','32498 north high','Rockingham','VA','22324','23455234');
+
+insert into javauser.product (productID, productName, description, pricepaid, suppliername) values ('659b4368','Alpine AG-B4FLX6','6" X 25 R-4.2 insulation','28.99','Goodman');
+insert into javauser.product (productID, productName, description, pricepaid, suppliername) values ('423F3433','Heater','6" X 25 R-4.2','56.99','Goodman');
+        
